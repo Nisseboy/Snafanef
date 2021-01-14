@@ -25,7 +25,7 @@ function setup() {
   w = ceil(windowWidth / rat / 2) * 2
   h = ceil(windowHeight / rat / 2) * 2
   createCanvas(w * rat, h * rat);
-  
+  document.body.style.overflow = 'hidden';
   start();
 }
 
