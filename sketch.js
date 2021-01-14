@@ -22,8 +22,8 @@ this.focus();
 
 function setup() {
   rat = size + spacing;
-  w = truncate(windowWidth / rat / 2) * 2
-  h = truncate(windowHeight / rat / 2) * 2
+  w = ceil(windowWidth / rat / 2) * 2
+  h = ceil(windowHeight / rat / 2) * 2
   createCanvas(w * rat, h * rat);
   
   start();
