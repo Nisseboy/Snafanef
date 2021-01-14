@@ -11,6 +11,7 @@ let backgroundColor = [0, 0, 0];
 let emptyColor = [25, 25, 25];
 let snakeColor = [220, 220, 220];
 let rat;
+let ZECOLOURIOFZEHEADOFZESNEK = [255, 255, 0];
 
 let pos = [];
 let vel = [1,0];
@@ -80,8 +81,12 @@ function drawShit() {
       }
     }
 
-    fill(snakeColor);
+
     for (let i = 0; i < pos.length; i++) {
+      if (i == 0)
+        fill(ZECOLOURIOFZEHEADOFZESNEK);
+      else
+        fill(snakeColor);
       rect(pos[i][0] * rat, pos[i][1] * rat, size, size);
     }
 
