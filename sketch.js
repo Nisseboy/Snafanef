@@ -66,9 +66,8 @@ function doOtherShit() {
     if (isIn(pos[0][0], pos[0][1], "Snake")) {
       start();
     }
-    if (pos[0][0] < 0 || pos[0][1] < 0 || pos[0][0] >= w || pos[0][1] >= h) {
-      start();
-    }
+    pos[0][0] %= w;
+    pos[0][1] %= h;
 }
 
 function drawShit() {
